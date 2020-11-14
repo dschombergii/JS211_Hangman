@@ -1,0 +1,134 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+.container {
+	height: 100vh;
+}
+
+button {
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+}
+
+#box button {
+	width: 30px;
+	height: 30px;
+	margin: 8px;
+}
+
+#new-game {
+	width: 70px;
+	height: 40px;
+	margin-top: 1em;
+}
+
+#word {
+	text-align: center;
+	font-size: 50pt;
+}
+
+#hint {
+	visibility: hidden;
+	margin-top: 1em;
+	margin-bottom: 3em;
+	height: 30px;
+}
+
+#result {
+	visibility: hidden;
+	font-size: 20pt;
+	margin-top: 1em;
+}
+
+#hangman {
+	margin: 4em;
+}
+
+#hangman div {
+	background: white;
+	display: none;
+}
+
+#hangman .base {
+	height: 2px;
+	width: 300px;
+	display: block;
+}
+
+#hangman .left-bar {
+	height: 400px;
+	width: 2px;
+	display: block;
+}
+
+#hangman .top-bar {
+	height: 2px;
+	width: 200px;
+	display: block;
+}
+
+#hangman .right-bar {
+	float: left;
+	height: 30px;
+	margin-left: 200px;
+	width: 2px;
+	display: block;
+}
+
+#hangman .head {
+	border-radius: 100%;
+	float: left;
+	margin-left: 175px;
+	margin-top: -375px;
+	height: 50px;
+	width: 50px;
+	display: block;
+	visibility: hidden;
+}
+
+#hangman .body {
+	float: left;
+	height: 140px;
+	margin-top: -321px;
+	margin-left: 200px;
+	width: 2px;
+	display: block;
+	visibility: hidden;
+}
+
+#hangman .left-arm,
+#hangman .right-arm,
+#hangman .left-leg,
+#hangman .right-leg {
+	float: left;
+	height: 90px;
+	margin-top: -321px;
+	margin-left: 173px;
+	transform: rotate(35deg);
+	width: 2px;
+	display: block;
+	visibility: hidden;
+}
+
+#hangman .right-arm,
+#hangman .right-leg {
+	margin-left: 230px;
+	margin-top: -324px;
+	transform: rotate(140deg);
+	display: block;
+	visibility: hidden;
+}
+
+#hangman .left-leg,
+#hangman .right-leg {
+	margin-top: -192px;
+	display: block;
+	visibility: hidden;
+}
+
+.appear {
+	display: block;
+}
